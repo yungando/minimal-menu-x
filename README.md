@@ -1,9 +1,19 @@
-# MinimalMenuX
+<p align="center"><img src="https://github.com/yungando/minimal-menu-x/blob/main/src/main/resources/assets/minimal-menu-x/icon.png" width="128" height="128"></p>
+<h3 align="center">MinimalMenuX</h3>
 
-## Setup
+## Features
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+Inspired by [MinimalMenu](https://modrinth.com/mod/minimalmenu), written from scratch for Minecraft 26.2+. Cleans up menu's, reducing amount of buttons and clutter.
 
-## License
+### Options
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Title Screen:
+- Hide Realms button\*
+- Reduce Icon Widgets\*
+- Hide Copyright Text\*
+
+\* Enabled by default.
+
+### Dependencies
+
+[Mod Menu](https://modrinth.com/mod/modmenu) and [Cloth Config](https://modrinth.com/mod/cloth-config) optionally required to change config.

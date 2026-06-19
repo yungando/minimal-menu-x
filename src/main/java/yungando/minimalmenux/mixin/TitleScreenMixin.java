@@ -7,13 +7,11 @@ import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.network.chat.Component;
-import org.spongepowered.asm.mixin.Debug;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import yungando.minimalmenux.MinimalMenuX;
 
-@Debug(export = true)
 @Mixin(TitleScreen.class)
 public abstract class TitleScreenMixin extends Screen {
   protected TitleScreenMixin(Component title) {
