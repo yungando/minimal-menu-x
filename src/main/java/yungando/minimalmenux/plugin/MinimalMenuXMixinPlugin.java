@@ -16,10 +16,15 @@ public class MinimalMenuXMixinPlugin implements IMixinConfigPlugin {
 
   @Override
   public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-    if (List.of("ModMenuTitleScreenMixin", "ModMenuPauseScreenMixin", "ModMenuEventHandlerMixin").contains(mixinClassName)) {
+    if (
+      mixinClassName.endsWith(".ModMenuTitleScreenMixin") ||
+        mixinClassName.endsWith(".ModMenuPauseScreenMixin") ||
+        mixinClassName.endsWith(".ModMenuEventHandlerMixin")
+    ) {
       return FabricLoader.getInstance().isModLoaded("modmenu");
     }
-    if (mixinClassName.equals("MainMenuCreditsTitleScreenMixin")) {
+
+    if (mixinClassName.endsWith(".MainMenuCreditsTitleScreenMixin")) {
       return FabricLoader.getInstance().isModLoaded("main-menu-credits");
     }
 
