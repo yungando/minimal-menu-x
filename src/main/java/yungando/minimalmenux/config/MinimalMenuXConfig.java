@@ -13,6 +13,12 @@ public class MinimalMenuXConfig {
 
   public boolean reducePauseScreenIconWidgets() { return true; }
 
+  public boolean hideLanguage() { return true; }
+  public boolean hideChat() { return true; }
+  public boolean hideAccessibility() { return true; }
+  public boolean hideTelemetry() { return true; }
+  public boolean hideCredits() { return true; }
+
   @Config(name = MinimalMenuX.MOD_ID)
   public static class MinimalMenuXAutoConfig extends MinimalMenuXConfig implements ConfigData {
     @Category("titleScreen")
@@ -29,6 +35,22 @@ public class MinimalMenuXConfig {
     @Tooltip
     private boolean reducePauseScreenIconWidgets = super.reduceTitleScreenIconWidgets();
 
+    @Category("optionsScreen")
+    @Tooltip
+    private boolean hideLanguage = super.hideLanguage();
+    @Category("optionsScreen")
+    @Tooltip
+    private boolean hideChat = super.hideChat();
+    @Category("optionsScreen")
+    @Tooltip
+    private boolean hideAccessibility = super.hideAccessibility();
+    @Category("optionsScreen")
+    @Tooltip
+    private boolean hideTelemetry = super.hideTelemetry();
+    @Category("optionsScreen")
+    @Tooltip
+    private boolean hideCredits = super.hideCredits();
+
     @Override
     public boolean hideRealms() { return hideRealms; }
     @Override
@@ -37,6 +59,17 @@ public class MinimalMenuXConfig {
     public boolean hideCopyright() { return hideCopyright; }
 
     @Override
-    public boolean reducePauseScreenIconWidgets() { return reduceTitleScreenIconWidgets; }
+    public boolean reducePauseScreenIconWidgets() { return reducePauseScreenIconWidgets; }
+
+    @Override
+    public boolean hideLanguage() { return hideLanguage; }
+    @Override
+    public boolean hideChat() { return hideChat; }
+    @Override
+    public boolean hideAccessibility() { return hideAccessibility; }
+    @Override
+    public boolean hideTelemetry() { return hideTelemetry; }
+    @Override
+    public boolean hideCredits() { return hideCredits; }
   }
 }
