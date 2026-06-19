@@ -16,7 +16,7 @@ public class MinimalMenuXMixinPlugin implements IMixinConfigPlugin {
 
   @Override
   public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-    if (List.of("ModMenuTitleScreenMixin", "ModMenuEventHandlerMixin").contains(mixinClassName)) {
+    if (List.of("ModMenuTitleScreenMixin", "ModMenuPauseScreenMixin", "ModMenuEventHandlerMixin").contains(mixinClassName)) {
       return FabricLoader.getInstance().isModLoaded("modmenu");
     }
     if (mixinClassName.equals("MainMenuCreditsTitleScreenMixin")) {

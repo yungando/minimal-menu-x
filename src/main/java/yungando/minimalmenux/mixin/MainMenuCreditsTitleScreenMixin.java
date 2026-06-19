@@ -24,7 +24,7 @@ public abstract class MainMenuCreditsTitleScreenMixin extends Screen {
     index = 3
   )
   private int setBottomRightCreditsHorizontalPos(int horizontalHeight) {
-    return MinimalMenuX.config.reduceIconWidgets()
+    return MinimalMenuX.config.reduceTitleScreenIconWidgets()
       ? horizontalHeight + 20
       : horizontalHeight;
   }

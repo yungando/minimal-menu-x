@@ -33,7 +33,7 @@ public abstract class TitleScreenMixin extends Screen {
       spacing -= 24;
     }
 
-    if (MinimalMenuX.config.reduceIconWidgets()) {
+    if (MinimalMenuX.config.reduceTitleScreenIconWidgets()) {
       spacing -= 24;
     }
 
@@ -49,28 +49,28 @@ public abstract class TitleScreenMixin extends Screen {
 
   @WrapOperation(method = "init", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screens/TitleScreen;addRenderableWidget(Lnet/minecraft/client/gui/components/events/GuiEventListener;)Lnet/minecraft/client/gui/components/events/GuiEventListener;", ordinal = 1))
   private GuiEventListener removeLanguageButton(TitleScreen instance, GuiEventListener guiEventListener, Operation<GuiEventListener> original) {
-    return MinimalMenuX.config.reduceIconWidgets()
+    return MinimalMenuX.config.reduceTitleScreenIconWidgets()
       ? guiEventListener
       : original.call(instance, guiEventListener);
   }
 
   @WrapOperation(method = "init", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screens/TitleScreen;addRenderableWidget(Lnet/minecraft/client/gui/components/events/GuiEventListener;)Lnet/minecraft/client/gui/components/events/GuiEventListener;", ordinal = 2))
   private GuiEventListener removeAccessibilityButton(TitleScreen instance, GuiEventListener guiEventListener, Operation<GuiEventListener> original) {
-    return MinimalMenuX.config.reduceIconWidgets()
+    return MinimalMenuX.config.reduceTitleScreenIconWidgets()
       ? guiEventListener
       : original.call(instance, guiEventListener);
   }
 
   @ModifyArg(method = "init", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/components/FriendsButton;setPosition(II)V"), index = 0)
   private int setHorizontalPosForFriendsButton(int horizontalPos) {
-    return MinimalMenuX.config.reduceIconWidgets()
+    return MinimalMenuX.config.reduceTitleScreenIconWidgets()
       ? (this.width / 2) - 124
       : horizontalPos;
   }
   
   @ModifyArg(method = "init", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/components/Button$Builder;bounds(IIII)Lnet/minecraft/client/gui/components/Button$Builder;"), index = 1)
   private int setFinalButtonRowVerticalPos(int topPos) {
-    return MinimalMenuX.config.reduceIconWidgets()
+    return MinimalMenuX.config.reduceTitleScreenIconWidgets()
       ? topPos + 12
       : topPos;
   }

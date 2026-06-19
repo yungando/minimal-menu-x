@@ -5,7 +5,9 @@
   "client": [
     "MainMenuCreditsTitleScreenMixin",
     "ModMenuEventHandlerMixin",
+    "ModMenuPauseScreenMixin",
     "ModMenuTitleScreenMixin",
+    "PauseScreenMixin",
     "TitleScreenMixin"
   ],
   "plugin": "yungando.minimalmenux.plugin.MinimalMenuXMixinPlugin",

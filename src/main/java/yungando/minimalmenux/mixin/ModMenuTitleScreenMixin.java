@@ -22,7 +22,7 @@ public abstract class ModMenuTitleScreenMixin extends Screen {
     index = 0
   )
   private int setModMenuHorizontalPos(int horizontalPos) {
-    return MinimalMenuX.config.reduceIconWidgets()
+    return MinimalMenuX.config.reduceTitleScreenIconWidgets()
       ? (this.width / 2) + 104
       : horizontalPos;
   }
