@@ -9,12 +9,10 @@ Inspired by [MinimalMenu](https://modrinth.com/mod/minimalmenu), written from sc
 
 Title Screen:
 - Hide Realms button\*
-- Reduce Icon Widgets\* \*\*
+- Reduce Icon Widgets\*
 - Hide Copyright Text\*
 
 \* Enabled by default.
-
-\*\* Requires Mod Menu's button to be set to 'icon' mode.
 
 ### Dependencies
 

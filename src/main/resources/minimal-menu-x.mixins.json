@@ -1,16 +1,18 @@
 {
-	"required": true,
-	"package": "yungando.minimalmenux.mixin",
-	"compatibilityLevel": "JAVA_25",
-	"client": [
-		"TitleScreenMixin",
-		"ModMenuTitleScreenMixin"
-	],
-	"plugin": "yungando.minimalmenux.plugin.ModMenuMixinPlugin",
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
-	}
+  "required": true,
+  "package": "yungando.minimalmenux.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "MainMenuCreditsTitleScreenMixin",
+    "ModMenuEventHandlerMixin",
+    "ModMenuTitleScreenMixin",
+    "TitleScreenMixin"
+  ],
+  "plugin": "yungando.minimalmenux.plugin.MinimalMenuXMixinPlugin",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
 }
