@@ -3,16 +3,18 @@
 
 ## Features
 
-Inspired by [MinimalMenu](https://modrinth.com/mod/minimalmenu), written from scratch for Minecraft 26.2+. Cleans up menu's, reducing amount of buttons and clutter.
+Inspired by [MinimalMenu](https://modrinth.com/mod/minimalmenu), written from scratch for Minecraft 26.2+. Cleans up menus, reducing amount of buttons and clutter.
 
 ### Options
 
 Title Screen:
 - Hide Realms button\*
-- Reduce Icon Widgets\*
+- Reduce Icon Widgets\* \*\*
 - Hide Copyright Text\*
 
 \* Enabled by default.
+
+\*\* Requires Mod Menu's button to be set to 'icon' mode.
 
 ### Dependencies
 
