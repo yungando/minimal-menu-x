@@ -8,12 +8,22 @@ Inspired by [MinimalMenu](https://modrinth.com/mod/minimalmenu), written from sc
 ### Options
 
 Title Screen:
-- Hide Realms button\*
-- Reduce Icon Widgets\*
-- Hide Copyright Text\*
+- Hide Realms button
+- Reduce Icon buttons
+- Hide Copyright text
 
-\* Enabled by default.
+Pause Screen:
+- Reduce Icon buttons
+
+Options Screen:
+- Hide Language button
+- Hide Chat Settings button
+- Hide Accessibility Settings button
+- Hide Telemetry Data button
+- Hide Credits & Attribution button
 
 ### Dependencies
 
 [Mod Menu](https://modrinth.com/mod/modmenu) and [Cloth Config](https://modrinth.com/mod/cloth-config) optionally required to change config.
+
+<p align="center"><img src="https://github.com/yungando/minimal-menu-x/screenshots/title-screen.png"></p>
