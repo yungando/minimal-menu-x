@@ -3,7 +3,7 @@
 	"id": "minimal-menu-x",
 	"version": "${version}",
 	"name": "MinimalMenuX",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Cleans up menus, reducing amount of buttons and clutter.",
 	"authors": [
 		"yungando"
 	],
