@@ -26,4 +26,4 @@ Options Screen:
 
 [Mod Menu](https://modrinth.com/mod/modmenu) and [Cloth Config](https://modrinth.com/mod/cloth-config) optionally required to change config.
 
-<p align="center"><img src="https://github.com/yungando/minimal-menu-x/blob/main/screenshots/title-screen.png"></p>
+<p align="center"><img src="https://github.com/yungando/minimal-menu-x/blob/main/title-screen.png"></p>
