@@ -55,7 +55,7 @@ public abstract class PauseScreenMixin extends Screen implements PauseScreenInte
     if (!MinimalMenuX.config.reducePauseScreenIconWidgets()) return;
 
     int x = (this.width / 2);
-    int y = (this.height / 4) + 63;
+    int y = (this.height / 4) + 62;
 
     if (pauseScreenModMenuButtonInsertStyle) {
       friends.setPosition(x - 126, y - 6);
