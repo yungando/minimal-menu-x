@@ -18,7 +18,7 @@ public abstract class ModMenuTitleScreenMixin extends Screen {
   @TargetHandler(mixin = "com.terraformersmc.modmenu.mixin.MixinTitleScreen", name = "addModMenuIconWidget")
   @ModifyArg(
     method = "@MixinSquared:Handler",
-    at = @At(value = "INVOKE", target = "Lcom/terraformersmc/modmenu/gui/widget/UpdateCheckerTexturedButtonWidget;<init>(IIIIIIILnet/minecraft/resources/Identifier;IILnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/network/chat/Component;)V"),
+    at = @At(value = "INVOKE", target = "Lcom/terraformersmc/modmenu/gui/widget/SmallModMenuButtonWidget;<init>(IIIILnet/minecraft/network/chat/Component;IIIILnet/minecraft/client/gui/components/WidgetSprites;Lnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$CreateNarration;Z)V"),
     index = 0
   )
   private int setModMenuHorizontalPos(int horizontalPos) {
