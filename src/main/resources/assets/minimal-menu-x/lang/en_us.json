@@ -1,0 +1,27 @@
+{
+  "text.autoconfig.minimal-menu-x.title": "MinimalMenuX",
+
+  "text.autoconfig.minimal-menu-x.category.titleScreen": "Title Screen",
+  "text.autoconfig.minimal-menu-x.option.hideRealms": "Hide Realms",
+  "text.autoconfig.minimal-menu-x.option.hideRealms.@Tooltip": "Hide the \"Minecraft Realms\" button on the title screen.",
+  "text.autoconfig.minimal-menu-x.option.reduceTitleScreenIconWidgets": "Reduce Title Screen Icon buttons",
+  "text.autoconfig.minimal-menu-x.option.reduceTitleScreenIconWidgets.@Tooltip": "Hides the \"Change Language\" and \"Accessibility Settings\" icon buttons, and moves the \"Friends\" button over alongside the main buttons on the title screen.",
+  "text.autoconfig.minimal-menu-x.option.hideCopyright": "Hide Copyright",
+  "text.autoconfig.minimal-menu-x.option.hideCopyright.@Tooltip": "Hide the Copyright text the bottom right of the title screen.",
+
+  "text.autoconfig.minimal-menu-x.category.pauseScreen": "Pause Screen",
+  "text.autoconfig.minimal-menu-x.option.reducePauseScreenIconWidgets": "Reduce Pause Screen Icon buttons",
+  "text.autoconfig.minimal-menu-x.option.reducePauseScreenIconWidgets.@Tooltip": "Hides the \"Report Bugs\", \"Give Feedback\" and \"Report Player\" icon buttons, and moves the \"Friends\" button over alongside the main buttons on the pause screen.",
+
+  "text.autoconfig.minimal-menu-x.category.optionsScreen": "Options Screen",
+  "text.autoconfig.minimal-menu-x.option.hideLanguage": "Hide Language",
+  "text.autoconfig.minimal-menu-x.option.hideLanguage.@Tooltip": "Hide the \"Language\" button on the options screen.",
+  "text.autoconfig.minimal-menu-x.option.hideChat": "Hide Chat Settings",
+  "text.autoconfig.minimal-menu-x.option.hideChat.@Tooltip": "Hide the \"Chat Settings\" button on the options screen.",
+  "text.autoconfig.minimal-menu-x.option.hideAccessibility": "Hide Accessibility Settings",
+  "text.autoconfig.minimal-menu-x.option.hideAccessibility.@Tooltip": "Hide the \"Accessibility Settings\" button on the options screen.",
+  "text.autoconfig.minimal-menu-x.option.hideTelemetry": "Hide Telemetry Data",
+  "text.autoconfig.minimal-menu-x.option.hideTelemetry.@Tooltip": "Hide the \"Telemetry Data\" button on the options screen.",
+  "text.autoconfig.minimal-menu-x.option.hideCredits": "Hide Credits & Attribution",
+  "text.autoconfig.minimal-menu-x.option.hideCredits.@Tooltip": "Hide the \"Credits & Attribution\" button on the options screen."
+}
