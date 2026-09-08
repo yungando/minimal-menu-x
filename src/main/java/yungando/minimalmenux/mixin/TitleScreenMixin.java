@@ -9,7 +9,9 @@ import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import yungando.minimalmenux.MinimalMenuX;
 
 @Mixin(TitleScreen.class)
@@ -45,6 +47,11 @@ public abstract class TitleScreenMixin extends Screen {
     return MinimalMenuX.config.hideRealms()
       ? guiEventListener
       : original.call(instance, guiEventListener);
+  }
+
+  @Inject(method = "realmsNotificationsEnabled", at = @At(value = "HEAD"), cancellable = true)
+  private void disableRealmsNotifications(CallbackInfoReturnable<Boolean> cir) {
+    if (MinimalMenuX.config.hideRealms()) cir.setReturnValue(false);
   }
 
   @WrapOperation(method = "init", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screens/TitleScreen;addRenderableWidget(Lnet/minecraft/client/gui/components/events/GuiEventListener;)Lnet/minecraft/client/gui/components/events/GuiEventListener;", ordinal = 1))
