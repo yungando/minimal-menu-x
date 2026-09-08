@@ -25,7 +25,7 @@ public class MinimalMenuXMixinPlugin implements IMixinConfigPlugin {
     }
 
     if (mixinClassName.endsWith(".MainMenuCreditsTitleScreenMixin")) {
-      return FabricLoader.getInstance().isModLoaded("main-menu-credits");
+      return FabricLoader.getInstance().isModLoaded("main_menu_credits");
     }
 
     return true;

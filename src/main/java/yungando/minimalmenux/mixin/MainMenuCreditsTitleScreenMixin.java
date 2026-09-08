@@ -23,9 +23,9 @@ public abstract class MainMenuCreditsTitleScreenMixin extends Screen {
     slice = @Slice(from = @At(value = "INVOKE", target = "Ldev/isxander/mainmenucredits/config/MMCConfigEntry;getBottomRight()Ljava/util/List;")),
     index = 3
   )
-  private int setBottomRightCreditsHorizontalPos(int horizontalHeight) {
-    return MinimalMenuX.config.reduceTitleScreenIconWidgets()
-      ? horizontalHeight + 20
-      : horizontalHeight;
+  private int setBottomRightCreditsVerticalPos(int verticalPos) {
+      return MinimalMenuX.config.hideCopyright()
+        ? verticalPos + 20
+        : verticalPos;
   }
 }
