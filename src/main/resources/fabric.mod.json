@@ -31,8 +31,11 @@
 		"minecraft": "~26.2",
 		"java": ">=25"
 	},
-	"suggests": {
-		"modmenu": ">=20.0.1",
+	"recommends": {
+		"modmenu": ">=20.0.0",
 		"cloth-config2": "*"
+	},
+	"breaks": {
+		"modmenu": "<20.0.0"
 	}
 }
