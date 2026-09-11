@@ -1,41 +1,41 @@
 {
-	"schemaVersion": 1,
-	"id": "minimal-menu-x",
-	"version": "${version}",
-	"name": "MinimalMenuX",
-	"description": "Cleans up menus, reducing amount of buttons and clutter.",
-	"authors": [
-		"yungando"
-	],
-	"contact": {
-		"homepage": "https://github.com/yungando/minimal-menu-x",
-		"sources": "https://github.com/yungando/minimal-menu-x",
-		"issues": "https://github.com/yungando/minimal-menu-x/issues"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/minimal-menu-x/icon.png",
-	"environment": "client",
-	"entrypoints": {
-		"client": [
-			"yungando.minimalmenux.MinimalMenuX"
-		],
-		"modmenu": [
-			"yungando.minimalmenux.config.ModMenuEntrypoint"
-		]
-	},
-	"mixins": [
-		"minimal-menu-x.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
-		"java": ">=25"
-	},
-	"recommends": {
-		"modmenu": ">=20.0.0",
-		"cloth-config2": "*"
-	},
-	"breaks": {
-		"modmenu": "<20.0.0"
-	}
+  "schemaVersion": 1,
+  "id": "minimal-menu-x",
+  "version": "${version}",
+  "name": "MinimalMenuX",
+  "description": "Cleans up menus, reducing amount of buttons and clutter.",
+  "authors": [
+    "yungando"
+  ],
+  "contact": {
+    "homepage": "https://github.com/yungando/minimal-menu-x",
+    "sources": "https://github.com/yungando/minimal-menu-x",
+    "issues": "https://github.com/yungando/minimal-menu-x/issues"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/minimal-menu-x/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "yungando.minimalmenux.MinimalMenuX"
+    ],
+    "modmenu": [
+      "yungando.minimalmenux.config.ModMenuEntrypoint"
+    ]
+  },
+  "mixins": [
+    "minimal-menu-x.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25"
+  },
+  "recommends": {
+    "modmenu": ">=20.0.0",
+    "cloth-config2": "*"
+  },
+  "breaks": {
+    "modmenu": "<20.0.0"
+  }
 }

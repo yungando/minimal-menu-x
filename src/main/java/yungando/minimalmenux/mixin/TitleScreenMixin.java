@@ -74,7 +74,7 @@ public abstract class TitleScreenMixin extends Screen {
       ? (this.width / 2) - 124
       : horizontalPos;
   }
-  
+
   @ModifyArg(method = "init", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/components/Button$Builder;bounds(IIII)Lnet/minecraft/client/gui/components/Button$Builder;"), index = 1)
   private int setFinalButtonRowVerticalPos(int topPos) {
     return MinimalMenuX.config.reduceTitleScreenIconWidgets()

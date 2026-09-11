@@ -25,9 +25,9 @@ public abstract class ModMenuPauseScreenMixin {
     ModMenuConfig.GameMenuButtonStyle style = ModMenuConfig.GAME_MENU_BUTTON_STYLE.getValue();
     if (
       MinimalMenuX.config.reducePauseScreenIconWidgets()
-      && child instanceof AbstractWidget widget
-      && this instanceof PauseScreenInterface holder
-      && style == ModMenuConfig.GameMenuButtonStyle.ICON
+        && child instanceof AbstractWidget widget
+        && this instanceof PauseScreenInterface holder
+        && style == ModMenuConfig.GameMenuButtonStyle.ICON
     ) {
       holder.minimal_menu_x$setPauseScreenModMenuButton(widget);
       return child;

@@ -24,8 +24,8 @@ public abstract class MainMenuCreditsTitleScreenMixin extends Screen {
     index = 3
   )
   private int setBottomRightCreditsVerticalPos(int verticalPos) {
-      return MinimalMenuX.config.hideCopyright()
-        ? verticalPos + 20
-        : verticalPos;
+    return MinimalMenuX.config.hideCopyright()
+      ? verticalPos + 20
+      : verticalPos;
   }
 }
